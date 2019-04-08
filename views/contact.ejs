@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/assets/style1.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <% include partial_view/nav.ejs %>
+    <h1>Contact us</h1>
+    <p1>tp number</p1>
+    <!-- <p><strong><%= qs.who %></strong></p>
+    <p><strong><%= qs.dep %></strong></p> -->
+
+    <p2>
+      <form id="contact-form" method="POST" action="/contact">
+        <lable for="who"> who do u want to contact</lable>
+        <input type="text" name="who" value="<%= qs.who %>" />
+        <lable for="dep"> department</lable>
+        <input type="text" name="dep" value="<%= qs.dep %>" />
+        <input type="submit" value="submit" />
+      </form>
+    </p2>
+  </body>
+</html>
